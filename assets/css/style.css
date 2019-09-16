@@ -1,0 +1,755 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Template Name: Themeforest - Creatrive / Corporate / Single Page Template
+Created By: Codeshaper
+Website: http://codeshaper.net
+Description: Themeforest is Fully Responsive Creative / Corporate / Single Page Bootstrap Template With Awesome Sections.
+Version: v1.0
+Last change:    24/03/17 [fixed Float bug, vf]
+Support: http://codeshaper.net/contact.php
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+  1. Theme Default Css
+  2. Header Menu Css
+  3. Hero Area Css
+    3.1 Boards Area Css
+  4. About Css
+  5. Surface Css
+  6. Team Css
+  7. Update Css
+  8. Follow Css
+  9. Footer Css
+  -------------------------------------------------------------------*/
+
+
+/*
+==========================================
+    Google fonts
+==========================================
+*/
+
+
+/*font-family: 'Montserrat', sans-serif;*/
+/*font-family: 'Playfair Display', serif;*/
+/*font-family: 'Raleway', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300i,400,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i|Raleway:300i,400,400i,500,500i,600,700,700i,800,800i,900&display=swap');
+/*
+==========================================
+   1. Theme Default CSS
+==========================================
+*/
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    background: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+input,
+select,
+textarea {
+    outline: none;
+    border: none;
+    
+}
+
+a,
+i,
+button,
+img,
+input,
+span,
+*:before,
+*:after {
+    -webkit-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    border: none;
+}
+
+.btn:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+.form-control:focus {
+    border: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+a:focus {
+    color: inherit;
+    outline: medium none;
+    transform: scale(1);
+    text-decoration: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    background:#00b0ff;
+    text-align: center;
+    outline: none;
+    font-size: 1.6rem;
+    border:.5px solid #fff;
+    transition: .3s;
+}
+.section-padding{
+    padding: 100px 0px;
+}
+.pt-100{
+    padding-top:100px;
+}
+.pb-150{
+    padding-bottom: 150px;
+}
+.mt-250{
+    margin-top: -250px;
+}
+.mb-120{
+    margin-bottom: -120px;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+}
+
+/*
+==========================================
+    1. Theme Default CSS End
+==========================================
+*/
+
+/*
+==========================================
+   2. Header Menu Css
+==========================================
+*/
+
+header {
+    width: 100%;
+    position:absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    padding-top: 20px;
+}
+.logo h2{
+  font-size: 3.4rem;
+  font-weight:700;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-menu {
+    margin-top: 10px;
+    text-align: center;
+}
+.main-menu ul li {
+   display: inline-block;
+}
+
+.main-menu ul li a {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    font-weight:400;
+    font-size: 1.4rem;
+    position: relative;
+    transition: .3s;
+}
+.social-section li a:last-child {
+    padding: 0px 0px;
+}
+
+.main-menu ul li a:hover {
+    color: #ffffff !important;
+    background:#00b0ff;
+
+
+}
+
+.social-section li {
+    display: inline-block;
+    background: #000;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height:30px;
+}
+
+.social-section li a {
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0px 7px;
+}
+
+.social-section li:last-child {
+    padding: 0px 0px;
+}
+
+.social-section li a:hover i {
+    transform: rotate(360deg);
+}
+
+.responsive-menu{
+    display: none;
+    text-align: center;
+}
+
+.responsive-menu{
+    position: absolute;
+    top:-4px;
+    right:0px;
+}
+.responsive-menu .slicknav_menu {
+     background:none;
+    width: 200px;
+    margin:-1px;
+   padding: 16px 0px;
+}
+.slicknav_btn {
+    background-color:transparent;
+}
+.slicknav_nav a:hover {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background: #00d2ff;
+    color: #222;
+}
+.slicknav_nav {
+    background: #1E003D;
+    width: 200px;
+    padding: 16px 0px;
+    position: absolute;
+    top: 47px;
+}
+
+.navbar1.fixed {
+    position: fixed !important;
+    padding: 10px 0 !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #1E003D;
+    animation: nav-appear;
+    -webkit-animation: nav-appear;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+.navbar1.fixed .main-menu ul li a,
+.logo h2{
+    color: #fff !important;
+}
+.navbar1.fixed .responsive-menu .slicknav_menu {
+   padding: 11px 0px;
+}
+
+@keyframes nav-appear {
+    0% {
+        top: -100%
+    }
+    25% {
+        top: -75%
+    }
+    75% {
+        top: -25%
+    }
+    100% {
+        top: 0%
+    }
+}
+
+nav.black {
+    background: #000;
+}
+
+/*
+==========================================
+  3. Hero Area Css
+==========================================
+*/
+
+.hero-area {
+    position: relative;
+    background:linear-gradient(to top, rgba(255,0,0,0), rgba(255,0,0,0)), url('../img/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:auto;
+    width: 100%;
+    z-index: 1;
+    /*clip-path: polygon(0% 0%, 100% 0, 100% 75%, 0% 100*/
+}
+
+
+
+
+.header-text {
+     font-family: 'Playfair Display', serif;
+    font-style: italic;
+    padding-top:145px;
+}
+
+.header-text h1 {
+    font-size: 5.4rem;
+    font-weight: 700;
+
+}
+
+.header-text p {
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+}
+
+    /*
+    ==========================================
+       3.1 Boards Area CSS
+    ==========================================
+    */
+.board-slider {
+    width: 70%;
+    margin-left: 15%;
+    padding:100px 0px;
+
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background: #fff;
+    box-shadow: 0.1rem -0.1rem .6rem 0.1rem #000;
+}
+
+.flex-item {
+    height: auto;
+    width: 50%;
+}
+
+.slider-left img{
+    max-width: 90%;
+}
+.slider-left{
+    position: relative;
+}
+.slider-left::after {
+    position: absolute;
+    content: '';
+    top: 100px;
+    left: -120%;
+    margin-left: -15px;
+    background: url(../img/thumbs.png);
+    background-repeat: no-repeat;
+    z-index: 1;
+    width: 72px;
+    max-height: 300px;
+    height: 290px;
+}
+.jr h3{
+    font-size: 2rem;
+    font-weight: 400;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+.ratting span {
+    float: right;
+    background: #000;
+    color: #fff;
+    padding: 1px 1px;
+    margin-top: -2.9rem;
+}
+
+.flex-item.item-text {
+    margin-top: 40px;
+}
+
+#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-bottom: 3px solid #00b0ff !important;
+    font-size: 14Px;
+    font-weight: bold;
+}
+#tabs .nav-tabs .nav-link {
+    border:none;
+    color: #cfcfcf;
+    font-size: 1.4rem;
+    margin-right: 0px;
+    display: block;
+    margin-top: 18px;
+    padding: 0 !important;
+}
+#tabs .nav-tabs .nav-link.active {
+    color: #000;
+}
+.tab-pane {
+    color: #cfcfcf;
+}
+
+
+.price h4 {
+    display: inline-block;
+    padding-right: 24px !important;
+    font-size: 2.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+}
+a.view {
+    text-decoration: underline;
+    color: #00b0ff;
+}
+.board-slider .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    display: block;
+}
+.board-slider .owl-nav {
+    position: absolute;
+    top: 63px;
+    right: -33px;
+    background: #f2d800;
+    color: #ffff;
+    width: 76px;
+    height: 22px;
+    line-height: 10px;
+}
+/*
+==========================================
+   4. About CSS
+==========================================
+*/
+
+.about{
+     position: relative;
+   background: linear-gradient(rgba(41, 37, 37, 0.5), rgba(41, 37, 37, 0.5)), url(../img/surfers-co.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    height:600px;
+    width: 100%;
+   
+    /*margin-top:400px;*/
+}
+h2.about-text.text-center {
+    font-size: 17rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #eee;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -113px;
+    z-index: -1;
+}
+
+
+/*
+==========================================
+    5. Surface CSS
+==========================================
+*/
+
+.surface .row,
+.instagram .row{
+    margin-right: 0;
+
+}
+.text-width {
+    height:auto;
+    background: #fff;
+    color: #000;
+    margin-top: -56px;
+
+}
+
+
+.surface-text {
+    width: 58%;
+    margin-left:30%;
+    padding: 30px;
+}
+
+.surface-text h3,
+.surface-text a{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+
+}
+.surface-text p{
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight:400;
+
+}
+.surface-text a{
+    font-size: 22px;
+    border-bottom:2px solid #00b0ff;
+    color:#00b0ff;
+    letter-spacing:0px;
+
+}
+
+.img-width {
+    max-width: 80%;
+    margin-top:136px;
+}
+
+
+/*
+==========================================
+   6. Team CSS
+==========================================
+*/
+.team{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.team h2.about-text.text-center{
+    top: 2px;
+}
+ .team .owl-carousel .item {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    transition: .3s;
+    background-color: white;
+    color: #000 !important;
+    border-radius: 5px;
+    padding: 15px 10px;
+    box-shadow: 0px 0px 62px rgba(202, 199, 199, 0.28);
+}
+ .team .owl-carousel .item h4{
+    color: #1cadee;
+ }
+.team .owl-carousel .item:hover{
+    background-color:#00b0ff;
+}
+.team .owl-carousel .item:hover h4{
+    color:#fff;
+}
+.team .owl-carousel .item i{
+    color:#757070;
+}
+.team .owl-carousel .item.item-1 {
+    top:20px;
+}
+.owl-item.active {
+    margin-top: 28px;
+}
+img.owl-img {
+    max-width: 84px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 62px rgba(202, 199, 199, 0.28);
+   
+}
+.team .owl-carousel .owl-item img {
+    display: inline-block;
+    width: 100%;
+}
+img.wave {
+    max-width: 32px;
+}
+.team .owl-nav button.owl-prev {
+    position: absolute;
+    left: -50px;
+    top: 40%;
+    width: 80px;
+    margin-left: -20px;
+    z-index: 1;
+}
+.team .owl-nav button.owl-next {
+    position: absolute;
+    right: -72px;
+    top: 40%;
+    width: 80px;
+    margin-left: -20px;
+    z-index: 1;
+}
+
+
+/*
+==========================================
+  7. Update CSS
+==========================================
+*/
+
+.card{
+    transition: .3s;
+    border:none;
+}
+.card:hover{
+    box-shadow: 0px 0px 62px rgba(202, 199, 199, 0.28);
+    color: red;
+    transform: scale(1.06);
+}
+
+
+/*
+==========================================
+   8. Follow CSS
+==========================================
+*/
+
+.masonaryholder{
+            column-count:2;
+            column-gap: 0px;
+            margin:1px;
+          }
+.masonaryblock {
+    display: inline-block;
+    background-color: #ddd;
+    width: 100%;
+    box-sizing: border-box;
+}
+.masonaryblock img {
+    width: 312px;
+}
+.surfersco {
+    display: flex;
+    background: #fff;
+    padding: 10px 20px;
+}
+
+.surfersco h4{
+    padding:0px 20px;
+    color: #00b0ff;
+    font-size:1.9rem;
+    font-weight: 700;
+}
+
+
+/*
+==========================================
+   9. Footer CSS
+==========================================
+*/
+
+
+.footer-section {
+    height:auto;
+    background: #000000;
+    z-index: -3;
+}
+.col-md-6.d-flex.align-items-center p {
+    margin-top: 155px;
+    font-size: 23px;
+}
+.footer-section ul {
+    list-style: square inside url(../img/wave.png);
+    color: #fff;
+}
+
+.footer-section ul li a{
+    color: #fff;
+
+}
+
+input[type="text"] {
+  width: 100%;
+  border-bottom: 2px solid #aaa;
+  outline: none;
+  padding-bottom: 5px;
+  transition: 0.3s;
+  background: none;
+  color: #fff;
+}
+
+
+.inputWithIcon input[type="text"] {
+  padding-left: 40px;
+}
+
+.inputWithIcon {
+  position: relative;
+  margin-top: 100px;
+}
+
+.inputWithIcon i.fa,
+.inputWithIcon i.fas  {
+  position: absolute;
+  left: 0;
+  top: 28px;
+  padding: 9px 8px;
+  color: #aaa;
+  transition: 0.3s;
+}
+.inputWithIcon i.fas  {
+  left: 90%;
+  background:#00b0ff;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+label{
+    font-size: 24px;
+    color: #fff;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 400;
+}
+
